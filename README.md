@@ -34,8 +34,8 @@ The Financial Management System is a comprehensive platform designed to help use
 ## Tech Stack
 
 - **Frontend**: Next.js, React, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
+- **Backend**: Appwrite
+- **Database**: Appwrite
 - **Authentication**: OAuth, JWT
 - **APIs**: Plaid API, RESTful services
 - **Deployment**: Vercel, Docker
