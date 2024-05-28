@@ -14,16 +14,16 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet"
-  
+} from "@/components/ui/sheet"
+import Footer from './Footer'
 
 const MobileNav = ({user}: MobileNavProps) => {
     const pathname = usePathname();
 
-  return (
+return (
     <section className='w-full max-w-[246px]'>
     <Sheet>
-      <SheetTrigger>
+    <SheetTrigger>
         <Image 
             src="/icons/hamburger.svg"
             width={30}
@@ -31,8 +31,8 @@ const MobileNav = ({user}: MobileNavProps) => {
             alt="menu"
             className="cursor-pointer"
         />
-      </SheetTrigger>
-       <SheetContent side="left" className='border-none bg-white'>
+    </SheetTrigger>
+    <SheetContent side="left" className='border-none bg-white'>
                 <Link href="/"
                     className="flex cursor-pointer items-center gap-1 px-4">
                         <Image 
@@ -78,11 +78,12 @@ const MobileNav = ({user}: MobileNavProps) => {
                         })}
                     </nav>
                 </SheetClose>
+                <Footer user={user} type="mobile"/>
             </div>
-      </SheetContent>
+    </SheetContent>
     </Sheet>
     </section>
-  )
+)
 }
 
 export default MobileNav

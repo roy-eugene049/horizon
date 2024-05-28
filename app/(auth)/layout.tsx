@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
+import Image from "next/image";
 
 
 export default function RootLayout({
@@ -7,9 +8,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pageImg = '/icons/auth-image.svg'
+
   return (
-    <main>
+    <main className="flex min-h-screen w-full justify-between font-inter">
         {children}
+        <div className="auth-asset">
+          <div>
+            <Image 
+              src={pageImg}
+              alt="auth"
+              width={500}
+              height={500}
+            />
+          </div>
+        </div>
     </main>
   );
 }
