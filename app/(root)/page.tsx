@@ -14,7 +14,7 @@ const loggedIn = await getLoggedInUser();
                 <HeaderBox 
                 type="greeting"
                 title="welcome"
-                user={loggedIn?.name || 'Guest'}
+                user={loggedIn?.firstName || 'Guest'}
                 subtext="Access and Manage your account and transactions efficiently."
                 />
 
